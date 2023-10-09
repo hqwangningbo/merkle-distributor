@@ -8,14 +8,14 @@ use frame_support::{
     sp_runtime::traits::{
         AccountIdConversion, AtLeast32BitUnsigned, Keccak256, One, Saturating, StaticLookup, Zero,
     },
-    sp_std::{
-        collections::btree_set::BTreeSet,
-        convert::{TryFrom, TryInto},
-        vec::Vec,
-    },
     PalletId,
 };
 use frame_system::pallet_prelude::*;
+use sp_std::{
+    collections::btree_set::BTreeSet,
+    convert::{TryFrom, TryInto},
+    vec::Vec,
+};
 use scale_info::TypeInfo;
 use sp_core::{Hasher, H256};
 
